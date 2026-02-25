@@ -32,11 +32,6 @@
                 <div class="card-header">
                     <h5>Quick Links</h5>
                 </div>
-                <div class="card-body">
-                    <a href="http://ecommerce.local/dashboard" class="btn btn-primary" target="_blank">
-                        Open Ecommerce App
-                    </a>
-                </div>
             </div>
         </div>
     </div>
