@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
@@ -14,7 +15,7 @@ class LoginController extends Controller
         return view('auth.login');
     }
 
-    public function login(Request $request)
+    public function login(Request $request):RedirectResponse
     {
         $credentials = $request->validate([
             'email' => 'required|email',
@@ -23,7 +24,6 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials, $request->filled('remember'))) {
             $request->session()->regenerate();
-
             return redirect()->intended('/dashboard')
                 ->with('success', 'Logged in successfully! You are also logged in to Foodpanda.');
         }
@@ -33,7 +33,7 @@ class LoginController extends Controller
         ])->onlyInput('email');
     }
 
-    public function logout(Request $request)
+    public function logout(Request $request):RedirectResponse
     {
         Auth::logout();
         $request->session()->invalidate();

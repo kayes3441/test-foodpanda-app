@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ config('app.name') }} - Login</title>
+    <title>{{ config('app.name') }} - Login Foodpanda</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -10,7 +10,7 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
-                    <h3>{{ config('app.name') }} - Login</h3>
+                    <h3>{{ config('app.name') }} - Login Foodpanda</h3>
                 </div>
                 <div class="card-body">
                     @if(session('success'))
@@ -44,7 +44,7 @@
 
                     <hr>
                     <p class="text-muted">
-                        Login here to access both Ecommerce and Foodpanda systems!
+                        Login here to access Foodpanda systems!
                     </p>
                 </div>
             </div>
