@@ -36,9 +36,6 @@
                     <a href="http://ecommerce.local/dashboard" class="btn btn-primary" target="_blank">
                         Open Ecommerce App
                     </a>
-                    <a href="http://foodpanda.local/dashboard" class="btn btn-success" target="_blank">
-                        Open Foodpanda App
-                    </a>
                 </div>
             </div>
         </div>
